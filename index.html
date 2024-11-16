@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kosugi+Maru&family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FAVORITE LIST</title>
+    <script src="./js/script.js" defer></script>
+</head>
+<body id="body">
+    <div class="body">
+        <header class="header">
+            <h1 class="headerLogo">MY FAVORITE LIST</h1>
+            <div class="headerLinks hidden-SP">
+                <a href="#" class="headerLink">NEW</a>
+                <a href="#" class="headerLink">FOOD</a>
+                <a href="#" class="headerLink">TRAVEL</a>
+                <a href="#" class="headerLink">CONTACT</a>
+            </div>
+            <div class="hidden-PC">
+                <div class="bodyColor" id="bodyColor"></div>
+                <div class="hamburgerMenu" id="hamburgerMenu">
+                    <span class="hamburgerMenuTop" id="hamburgerMenuTop"></span>
+                    <span class="hamburgerMenuMiddle" id="hamburgerMenuMiddle"></span>
+                    <span class="hamburgerMenuBottom" id="hamburgerMenuBottom"></span>
+                </div>
+                <div class="hamburgerMenuLinks" id="hamburgerMenuLinks">
+                    <div class="hamburgerMenuLogo"><span>MY FAVORITE LIST</span></div>
+                    <a  href="#" class="hamburgerMenuLink"><span>NEW</span></a>
+                    <a  href="./index.html" class="hamburgerMenuLink"><span>FOOD</span></a>
+                    <a  href="#" class="hamburgerMenuLink"><span>TRAVEL</span></a>
+                    <a  href="#" class="hamburgerMenuLink"><span>CONTACT</span></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="mainVisual">
+                <img src="./img/mainVisual.jpg" alt="メインビジュアル">
+            </div>
+            <section class="home active">
+                <h2 class="sectionTittle">ほうれん草</h2>
+                <div class="homeHeading heading">小見出し</div>
+                <p class="homeText">私の好きな食べ物はほうれん草です。<br>ほうれん草についてまとめたので最後まで閲覧していただけると幸いです。</p>
+                <div class="mainLinks">
+                    <a href="#explanation" class="mainLink">
+                        <span class="mainLinkText">ほうれん草とは</span>
+                        <div class="arroArea">
+                            <img src="./img/arrow.jpg" alt="矢印" class="arrowImg">
+                        </div>
+                    </a>
+                    <a href="#reason" class="mainLink">
+                        <span class="mainLinkText">好きな理由</span>
+                        <div class="arroArea">
+                            <img src="./img/arrow.jpg" alt="矢印" class="arrowImg">
+                        </div>
+                    </a>
+                    <a href="#recipe" class="mainLink">
+                        <span class="mainLinkText">アレンジレシピ</span>
+                        <div class="arroArea">
+                            <img src="./img/arrow.jpg" alt="矢印" class="arrowImg">
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="explanation active" id="explanation">
+                <h2 class="sectionTittle">ほうれん草とは</h2>
+                <div class="explanationHeading heading">小見出し</div>
+                <div class="explanationImgs">
+                    <div class="explanationImg">
+                        <img src="./img/explanation1.jpeg" alt="ほうれん草とは1">
+                    </div>
+                    <div class="explanationImg">
+                        <img src="./img/explanation2.jpeg" alt="ほうれん草とは2">
+                    </div>
+                </div>
+                <p class="explanationText">
+                    ホウレンソウ（菠薐草、学名:Spinacia oleracea）は、ヒユ科アカザ亜科ホウレンソウ属の野菜。
+                    <br>雌雄異株。ほうれん草とも表記される。
+                    <br>高温下では生殖生長に傾きやすくなるため、冷涼な地域もしくは冷涼な季節に栽培されることが多い。
+                    <br>冷え込むと軟らかくなり、味がよりよくなる。
+                </p>
+            </section>
+            <section class="reason active" id="reason">
+                <h2 class="sectionTittle">好きな理由</h2>
+                <div class="reasonHeading heading">小見出し</div>
+                <div class="reasonitem">
+                    <div class="reasonitemImg">
+                        <img src="./img/reason1.jpeg" alt="好きな理由1">
+                    </div>
+                    <div class="reasonitemTextArea">
+                        <div class="reasonitemTittle">■理由1</div>
+                        <p class="reasonitemText">
+                            ほうれん草は寒さに耐えるために葉に糖を蓄える特性があるため、ほうれん草に甘さがあります。
+                            <br>その甘さが癖になりやみつきになるほど好きです。
+                        </p>
+                        <a href="#" class="reasonLink">
+                            <span class="reasonLinkText">もっと見る</span>
+                            <div class="leanArrowArea">
+                                <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="reasonitem">
+                    <div class="reasonitemImg hidden-PC">
+                        <img src="./img/reason2.jpeg" alt="好きな理由2">
+                    </div>
+                    <div class="reasonitemTextArea">
+                        <div class="reasonitemTittle">■理由2</div>
+                        <p class="reasonitemText">
+                            ほうれん草自体に甘みがあるものの、ほかの具材や料理と混ぜ合わせても邪魔することが無い味なためどんな料理にも気軽に入れられる点が好きです。
+                        </p>
+                        <a href="#" class="reasonLink">
+                            <span class="reasonLinkText">もっと見る</span>
+                            <div class="leanArrowArea">
+                                <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="reasonitemImg hidden-SP">
+                        <img src="./img/reason2.jpeg" alt="好きな理由2">
+                    </div>
+                </div>
+                <div class="reasonitem">
+                    <div class="reasonitemImg">
+                        <img src="./img/reason3.jpeg" alt="好きな理由3">
+                    </div>
+                    <div class="reasonitemTextArea">
+                        <div class="reasonitemTittle">■理由3</div>
+                        <p class="reasonitemText">
+                            ほうれん草は栄養価がとても高いため、とりあえずほうれん草を食べれば様々な栄養が摂取できる点が好きです。
+                        </p>
+                        <a href="#" class="reasonLink">
+                            <span class="reasonLinkText">もっと見る</span>
+                            <div class="leanArrowArea">
+                                <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="recipe active" id="recipe">
+                <h2 class="sectionTittle">アレンジレシピ</h2>
+                <div class="recipeHeading heading">小見出し</div>
+                <div class="recipeItems">
+                    <div class="recipeItem">
+                        <div class="recipeItemImg">
+                            <img src="./img/recipe1.jpg" alt="レシピ1">
+                        </div>
+                        <div class="recipeItemTextArea">
+                            <div class="recipeItemTittle">ほうれん草スープ</div>
+                            <p class="recipeItemText">
+                                寒い日に嬉しいほっと一息あったかスープ
+                                <br>調理時間15分程度のため忙しい時におすすめ！
+                            </p>
+                            <a href="#" class="recipeLink">
+                                <span class="recipeLinkText">レシピを見る</span>
+                                <div class="leanArrowArea">
+                                    <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recipeItem">
+                        <div class="recipeItemImg">
+                            <img src="./img/recipe2.jpg" alt="レシピ1">
+                        </div>
+                        <div class="recipeItemTextArea">
+                            <div class="recipeItemTittle">ほうれん草の玉子焼き</div>
+                            <p class="recipeItemText">
+                                ほうれん草好き必見！
+                                <br>普段の卵焼きにほうれん草を入れるだけ！
+                                <br>弁当におすすめ！
+                            </p>
+                            <a href="#" class="recipeLink">
+                                <span class="recipeLinkText">レシピを見る</span>
+                                <div class="leanArrowArea">
+                                    <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recipeItem">
+                        <div class="recipeItemImg">
+                            <img src="./img/recipe3.jpg" alt="レシピ1">
+                        </div>
+                        <div class="recipeItemTextArea">
+                            <div class="recipeItemTittle">ほうれん草の肉野菜炒め</div>
+                            <p class="recipeItemText">
+                                ほうれん草だけでなく好きな具材も入れられる幅広い料理
+                                <br>炒め物なので色々なアレンジをして食べるのもおすすめ！
+                            </p>
+                            <a href="#" class="recipeLink">
+                                <span class="recipeLinkText">レシピを見る</span>
+                                <div class="leanArrowArea">
+                                    <img src="./img/leanArrow.jpg" alt="矢印" class="leanArrowImg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <h1 class="footerLogo">MY FAVORITE FOOD</h1>
+        </footer>
+    </div>
+</body>
+</html>

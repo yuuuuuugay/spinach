@@ -1,0 +1,1082 @@
+@charset "utf-8";
+/* レスポンシブPC */
+@media screen and (min-width:1024px){
+    /* 初期設定 */
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        color: #707070;
+        font-family: "Inter", sans-serif;
+    }
+    a{
+        color: #707070;
+        display: inline-block;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .hidden-PC{
+        display: none;
+    }
+    .arroArea{
+        width: 30px;
+        position: absolute;                
+        top: 50%;
+        right: 20px;
+        transform: translate(0,-50%);
+    }
+    .arrowImg{
+        border-radius: 50%;
+    }
+    .leanArrowArea{
+        width: 20px;
+        position: absolute;                
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+    }
+    .leanArrowImg{
+        border-radius: 50%;
+    }
+
+
+
+    /* ヘッダー */
+    .header{
+        height: 75px;
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        position: relative;
+    }
+    .headerLogo{
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(0,-50%);
+    }
+    .headerLinks{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translate(0,-50%);
+        display: flex;
+    }
+    .headerLink{
+        font-weight: 600;
+        font-size: 20px;
+        margin-right: 25px;
+    }
+    .headerLink:last-child{
+        margin-right: 0;
+    }
+
+
+
+    /* メイン共通 */
+    .main{
+        width: 100%;
+    }
+    section{
+        width: 820px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    section:nth-of-type(1){
+        padding: 100px 0 50px;
+    }
+    section:nth-last-of-type(1){
+        padding: 50px 0 100px;
+    }
+    .sectionTittle{
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    /* メインビジュアル */
+    .mainVisual{
+        height: 500px;
+        width: 100%;
+    }
+
+
+
+    /* メインほうれん草 */
+    .homeHeading{
+        margin-bottom: 30px;
+    }
+    .homeText{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mainLinks{
+        display: flex;
+        justify-self: center;
+    }
+    .mainLink{
+        height: 70px;
+        width: calc((400px * 2 - 20px)/3);
+        background-color: #ECECEC;
+        margin-right: 20px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+        word-break: keep-all;
+    }
+    .mainLink:hover{
+        height: calc(70px - 4px);
+        margin-top: 4px;
+        box-shadow: none;
+    }
+    .mainLink:last-child{
+        margin-right: 0;
+    }
+    .mainLinkText{
+        font-weight: 600;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 50px) / 2);
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /* メインほうれん草とは */
+    .explanationHeading{
+        margin-bottom: 50px;
+    }
+    .explanationImgs{
+        display: flex;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+    .explanationImg{
+        height: 225px;
+        width: 400px;
+        margin-right: 20px;
+    }
+    .explanationImg:last-child{
+        margin-right: 0;
+    }
+    .explanationImg img{
+        border-radius: 15px;
+    }
+    .explanationText{
+        text-align: center;
+    }
+
+
+
+    /* メイン好きな理由 */
+    .reasonHeading{
+        margin-bottom: 50px;
+    }
+    .reasonitem{
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .reasonitem:last-of-type{
+        margin-bottom: 0;
+    }
+    .reasonitemImg{
+        height: 225px;
+        width: 400px;
+    }
+    .reasonitemImg img{
+        border-radius: 15px;
+    }
+    .reasonitemTextArea{
+        width: 400px;
+        position: relative;
+    }
+    .reasonitemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+    .reasonLink{
+        height: 40px;
+        width: 150px;
+        background-color: #ECECEC;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .reasonLink:hover{
+        height: calc(40px - 2px);
+        margin-top: 2px;
+        box-shadow: none;
+    }
+    .reasonLinkText{
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+        word-break: keep-all;
+    }
+
+
+
+    /* レシピ */
+    .recipeHeading{
+        margin-bottom: 50px;
+    }
+    .recipeItems{
+        display: flex;
+        justify-content: space-between;
+    }
+    .recipeItem{
+        width: calc((400px * 2 - 20px)/3);
+    }
+    .recipeItemImg{
+        height: calc(((400px * 2 - 20px)/3) * 9 / 16);
+    }
+    .recipeItemImg img{
+        border-radius: 15px 15px 0 0;
+    }
+    .recipeItemTextArea{
+        background-color: #f9f9f9;
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+    }
+    .recipeItemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .recipeItemText{
+        padding: 0 15px 20px;
+        text-align: start;
+    }
+    .recipeLink{
+        height: 40px;
+        width: 150px;
+        background-color: #ECECEC;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .recipeLink:hover{
+        height: calc(40px - 2px);
+        margin-top: 2px;
+        box-shadow: none;
+    }
+    .recipeLinkText{
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+        word-break: keep-all;
+    }
+
+
+
+    /* フッター */
+    .footer{
+        height: 75px;
+        width: 100%;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+    .footerLogo{
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+
+
+    /* スクロールイベント */
+    .active{
+        transition: 1s;
+        transition-delay: 0.5s;
+        margin-top: 50px;
+        opacity: 0;
+    }
+    .is-active{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+/* レスポンシブタブレット */
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    /* 初期設定 */
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        color: #707070;
+        font-family: "Inter", sans-serif;
+    }
+    a{
+        color: #707070;
+        display: inline-block;
+        text-decoration: none;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .hidden-PC{
+        display: none;
+    }
+    .arroArea{
+        width: 30px;
+        position: absolute;                
+        top: 50%;
+        right: 20px;
+        transform: translate(0,-50%);
+    }
+    .arrowImg{
+        border-radius: 50%;
+    }
+    .leanArrowArea{
+        width: 20px;
+        position: absolute;                
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+    }
+    .leanArrowImg{
+        border-radius: 50%;
+    }
+
+
+
+    /* ヘッダー */
+    .header{
+        height: 75px;
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        position: relative;
+    }
+    .headerLogo{
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translate(0,-50%);
+    }
+    .headerLinks{
+        position: absolute;
+        top: 50%;
+        right: 50px;
+        transform: translate(0,-50%);
+        display: flex;
+    }
+    .headerLink{
+        font-weight: 600;
+        font-size: 20px;
+        margin-right: 25px;
+    }
+    .headerLink:last-child{
+        margin-right: 0;
+    }
+
+
+
+    /* メイン共通 */
+    .main{
+        width: 100%;
+    }
+    section{
+        width: 730px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    section:nth-of-type(1){
+        padding: 100px 0 50px;
+    }
+    section:nth-last-of-type(1){
+        padding: 50px 0 100px;
+    }
+    .sectionTittle{
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    /* メインビジュアル */
+    .mainVisual{
+        height: 500px;
+        width: 100%;
+    }
+
+
+
+    /* メインほうれん草 */
+    .homeHeading{
+        margin-bottom: 30px;
+    }
+    .homeText{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mainLinks{
+        display: flex;
+        justify-self: center;
+    }
+    .mainLink{
+        height: 70px;
+        width: calc((355px * 2 - 20px)/3);
+        background-color: #ECECEC;
+        margin-right: 20px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+        word-break: keep-all;
+    }
+    .mainLink:hover{
+        height: calc(70px - 4px);
+        margin-top: 4px;
+        box-shadow: none;
+    }
+    .mainLink:last-child{
+        margin-right: 0;
+    }
+    .mainLinkText{
+        font-weight: 600;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 50px) / 2);
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /* メインほうれん草とは */
+    .explanationHeading{
+        margin-bottom: 50px;
+    }
+    .explanationImgs{
+        display: flex;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+    .explanationImg{
+        height: 225px;
+        width: 355px;
+        margin-right: 20px;
+    }
+    .explanationImg:last-child{
+        margin-right: 0;
+    }
+    .explanationImg img{
+        border-radius: 15px;
+    }
+    .explanationText{
+        text-align: center;
+    }
+
+
+
+    /* メイン好きな理由 */
+    .reasonHeading{
+        margin-bottom: 50px;
+    }
+    .reasonitem{
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .reasonitem:last-of-type{
+        margin-bottom: 0;
+    }
+    .reasonitemImg{
+        height: 225px;
+        width: 355px;
+    }
+    .reasonitemImg img{
+        border-radius: 15px;
+    }
+    .reasonitemTextArea{
+        width: 355px;
+        position: relative;
+    }
+    .reasonitemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+    .reasonLink{
+        height: 40px;
+        width: 150px;
+        background-color: #ECECEC;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .reasonLink:hover{
+        height: calc(40px - 2px);
+        margin-top: 2px;
+        box-shadow: none;
+    }
+    .reasonLinkText{
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+        word-break: keep-all;
+    }
+
+
+
+    /* レシピ */
+    .recipeHeading{
+        margin-bottom: 50px;
+    }
+    .recipeItems{
+        display: flex;
+        justify-content: space-between;
+    }
+    .recipeItem{
+        width: calc((355px * 2 - 20px)/3);
+    }
+    .recipeItemImg{
+        height: calc(((400px * 2 - 20px)/3) * 9 / 16);
+    }
+    .recipeItemImg img{
+        border-radius: 15px 15px 0 0;
+    }
+    .recipeItemTextArea{
+        background-color: #f9f9f9;
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+    }
+    .recipeItemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .recipeItemText{
+        padding: 0 15px 20px;
+        text-align: start;
+    }
+    .recipeLink{
+        height: 40px;
+        width: 150px;
+        background-color: #ECECEC;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .recipeLink:hover{
+        height: calc(40px - 2px);
+        margin-top: 2px;
+        box-shadow: none;
+    }
+    .recipeLinkText{
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+        word-break: keep-all;
+    }
+
+
+
+    /* フッター */
+    .footer{
+        height: 75px;
+        width: 100%;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+    .footerLogo{
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+
+
+    /* スクロールイベント */
+    .active{
+        transition: 1s;
+        transition-delay: 0.5s;
+        margin-top: 50px;
+        opacity: 0;
+    }
+    .is-active{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+/* レスポンシブスマホ */
+@media screen and (max-width:768px){
+    /* 初期設定 */
+    html {
+        scroll-behavior: smooth;
+    }
+    body{
+        color: #707070;
+        font-family: "Inter", sans-serif;
+    }
+    .bodyToggle{
+        overflow: hidden;
+    }
+    .body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    a{
+        color: #707070;
+        display: inline-block;
+        text-decoration: none;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    p{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .hidden-SP{
+        display: none;
+    }
+    .arroArea{
+        width: 30px;
+        position: absolute;                
+        top: 50%;
+        right: 20px;
+        transform: translate(0,-50%);
+    }
+    .arrowImg{
+        border-radius: 50%;
+    }
+    .leanArrowArea{
+        width: 20px;
+        position: absolute;                
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+    }
+    .leanArrowImg{
+        border-radius: 50%;
+    }
+
+
+
+    /* ヘッダー */
+    .header{
+        height: 50px;
+        width: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        position: relative;
+    }
+    .headerLogo{
+        font-weight: 600;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translate(0,-50%);
+    }
+    .bodyColor{
+        height: 100vh;
+        width: 100vw;
+        z-index: 0;
+        background-color: #000000;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .bodyColorToggle{
+        opacity: 0.5;
+        z-index: 800;
+    }
+    .hamburgerMenu{
+        height: 25px;
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0,-50%);
+        z-index: 1000;
+    }
+    .hamburgerMenu span{
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #707070;
+        transition: 0.5s;
+    }
+    .hamburgerMenuTop{
+        position: absolute;
+        top: 0;
+    }
+    .hamburgerMenuTopToggle{
+        top: 50%;
+        transform: rotate(405deg);
+    }
+    .hamburgerMenuMiddle{
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
+    .hamburgerMenuMiddleToggle{
+        opacity: 0;
+    }
+    .hamburgerMenuBottom{
+        position: absolute;
+        bottom: 0;
+    }
+    .hamburgerMenuBottomToggle{
+        top: 50%;
+        transform: rotate(-405deg);
+    }
+    .hamburgerMenuLinks{
+        position: absolute;
+        top: 0;
+        left: 100vw;
+        background-color: #ffffff;
+        transition: 0.5s;
+        z-index: 900;
+    }
+    .hamburgerMenuLinksToggle{
+        transform: translate(-100%,0);
+    }
+    .hamburgerMenuLogo{
+        height: 50px;
+        width: 60vw;
+        position: relative;
+        border-bottom: 2px solid #d3d3d3;
+    }
+    .hamburgerMenuLogo span{
+        font-weight: 600;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: #eaeaea;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(0,-50%);
+    }
+    .hamburgerMenuLink{
+        display: block;
+        height: 15vh;
+        width: 60vw;
+        position: relative;
+        border-bottom: 2px solid #d3d3d3;
+    }
+    .hamburgerMenuLink span{
+        font-weight: 600;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+
+
+    /* メイン共通 */
+    .main{
+        width: 100%;
+    }
+    section{
+        width: calc(100% - 100px);
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    section:nth-of-type(1){
+        padding: 100px 0 50px;
+    }
+    section:nth-last-of-type(1){
+        padding: 50px 0 100px;
+    }
+    .sectionTittle{
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .heading{
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+
+    /* メインビジュアル */
+    .mainVisual{
+        height: 300px;
+        width: 100%;
+    }
+
+
+
+    /* メインほうれん草 */
+    .homeHeading{
+        margin-bottom: 30px;
+    }
+    .homeText{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mainLinks{
+        display: initial;
+        justify-content: normal;
+    }
+    .mainLink{
+        height: 70px;
+        width: 100%;
+        background-color: #ECECEC;
+        margin-right: 0;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+        word-break: keep-all;
+    }
+    .mainLink:last-of-type{
+        margin-bottom: 0;
+    }
+    .mainLinkText{
+        font-weight: 600;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 50px) / 2);
+        transform: translate(-50%, -50%);
+    }
+
+
+
+    /* メインほうれん草とは */
+    .explanationHeading{
+        margin-bottom: 50px;
+    }
+    .explanationImgs{
+        display: initial;
+        justify-self: auto;
+        margin-bottom: 0;
+    }
+    .explanationImg{
+        height: calc((100vw - 100px) * 9 / 16);
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .explanationImg:last-of-type{
+        margin-bottom: 0;
+    }
+    .explanationImg img{
+        border-radius: 15px;
+    }
+    .explanationText{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+
+    /* メイン好きな理由 */
+    .reasonHeading{
+        margin-bottom: 50px;
+    }
+    .reasonitem{
+        width: 100%;
+        display: initial;
+        margin-bottom: 20px;
+        justify-content: normal;
+    }
+    .reasonitem:last-of-type{
+        margin-bottom: 0;
+    }
+    .reasonitemImg{
+        height: calc((100vw - 100px) * 9 / 16);
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .reasonitemImg img{
+        border-radius: 15px;
+    }
+    .reasonitemTextArea{
+        width: 100%;
+    }
+    .reasonitemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+    .reasonitemText{
+        margin-bottom: 20px;
+    }
+    .reasonLink{
+        height: 40px;
+        width: 80%;
+        background-color: #ECECEC;
+        display: block;
+        border-radius: 5px;
+        margin: 0 auto 50px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: relative;
+    }
+    .reasonLink:nth-last-child(){
+        margin-bottom: 0;
+    }
+    .reasonLinkText{
+        font-weight: 600;
+        word-break: keep-all;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+    }
+
+
+
+    /* レシピ */
+    .recipeHeading{
+        margin-bottom: 50px;
+    }
+    .recipeItem{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .recipeItem:last-of-type{
+        margin-bottom: 0;
+    }
+    .recipeItemImg{
+        height: calc((100vw - 100px) * 9 / 16);
+    }
+    .recipeItemImg img{
+        border-radius: 15px 15px 0 0;
+    }
+    .recipeItemTextArea{
+        background-color: #f9f9f9;
+        border-radius: 0 0 15px 15px;
+        text-align: center;
+    }
+    .recipeItemTittle{
+        font-weight: 600;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    .recipeItemText{
+        padding: 0 15px 20px;
+        text-align: start;
+    }
+    .recipeLink{
+        height: 40px;
+        width: 80%;
+        background-color: #ECECEC;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 25%);
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .recipeLinkText{
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 30px) / 2);
+        transform: translate(-50%,-50%);
+        word-break: keep-all;
+    }
+
+
+
+    /* フッター */
+    .footer{
+        height: 75px;
+        width: 100%;
+        background-color: #F2F2F2;
+        position: relative;
+    }
+    .footerLogo{
+        font-weight: 600;
+        font-size: 36px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        white-space: nowrap
+    }
+    
+
+
+    /* スクロールイベント */
+    .active{
+        transition: 1s;
+        transition-delay: 0.5s;
+        margin-top: 50px;
+        opacity: 0;
+    }
+    .is-active{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
